@@ -27,7 +27,7 @@ const tasks = ref([
 const finished = ref(false)
 
 function onClick() {
-  emits('finish', [])
+  emits('finish', tasks.value)
   finished.value = true
 }
 
@@ -40,11 +40,9 @@ function onClick() {
 
     Apenas leia o código.
   </Task>
-
-  <Task v-model="tasks[0].complete">
-    <template #heading>{{ tasks[0].title }}</template>
-
-    {{tasks[0].description}}
+  <Task v-for="item in tasks" :key="item.title" v-model="item.complete">
+    <template #heading>{{ item.title }}</template>
+    {{ item.description }}
   </Task>
 
   <br>

@@ -15,7 +15,8 @@ const emits = defineEmits(['update:model-value'])
 
 <template>
   <div class="item">
-    <input :checked="modelValue" @click="emits('update:model-value', $event.target.checked)" type="checkbox" name="" id="">
+    <input :checked="modelValue" @click="emits('update:model-value', $event.target.checked)" type="checkbox" name=""
+      id="">
     <div class="details">
       <h3>
         <slot name="heading"></slot>

@@ -8,20 +8,20 @@ import { ref } from "vue";
 const retronatusGrade = ref(null)
 const braincaseGrade = ref(null)
 
-function finishRetronatus(tasks){
+function finishRetronatus(tasks) {
   let grade = 10
-  for(let task of tasks) {
-    if(task.complete) {
+  for (let task of tasks) {
+    if (task.complete) {
       grade += 10
     }
   }
   retronatusGrade.value = grade
 }
 
-function finishBraincase(tasks){
+function finishBraincase(tasks) {
   let grade = 25
-  for(let task of tasks) {
-    if(task.complete) {
+  for (let task of tasks) {
+    if (task.complete) {
       grade += 25
     }
   }
@@ -42,7 +42,7 @@ function finishBraincase(tasks){
   <main>
     <div class="col">
       <div>
-        <h1 class="green">NOTA: 
+        <h1 class="green">NOTA:
           <span v-if="retronatusGrade !== null">{{ retronatusGrade }}</span>
           <span v-else>aguardando...</span>
         </h1>

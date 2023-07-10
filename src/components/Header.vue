@@ -6,10 +6,12 @@
       <br>
       <ul>
         <li>
-          <a href="https://www.atlassian.com/br/git/tutorials/learn-git-with-bitbucket-cloud" target="_blank" rel="noopener">Aprenda o Git com Bitbucket Cloud</a>
+          <a href="https://www.atlassian.com/br/git/tutorials/learn-git-with-bitbucket-cloud" target="_blank"
+            rel="noopener">Aprenda o Git com Bitbucket Cloud</a>
         </li>
         <li>
-          <a href="https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank" rel="noopener">Fluxo de trabalho de Gitflow</a>.
+          <a href="https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank"
+            rel="noopener">Fluxo de trabalho de Gitflow</a>.
         </li>
       </ul>
     </h3>
@@ -34,9 +36,9 @@ h3 {
 }
 
 @media (min-width: 1024px) {
+
   .greetings h1,
   .greetings h3 {
     text-align: left;
   }
-}
-</style>
+}</style>
